@@ -1,0 +1,38 @@
+/* Nav.css */
+.navbar {
+    display: flex; /* Horizontal layout */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Vertical alignment */
+    background-color: hsl(0, 0%, 95%); /* Light gray background */
+    padding: 1rem; /* Content padding */
+    list-style: none; /* Remove default bullet points from list */
+    margin: 0; /* Remove default margin for better control */
+  }
+  
+  .navbar h2 {
+    margin-right: auto; /* Push heading to the left side */
+    font-size: 1.2rem; /* Adjust heading size as needed */
+    font-weight: bold; /* Bold for emphasis */
+    margin-bottom: 0; /* Remove bottom margin for alignment */
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Remove underlines for cleaner appearance */
+    color: hsl(220, 20%, 20%); /* Dark gray text color */
+    padding: 0.5rem 1rem; /* Add padding for comfortable touch targets */
+    margin-left: 1rem; /* Spacing between links */
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    background-color: hsl(0, 0%, 85%); /* Lighter gray background on interaction */
+    cursor: pointer; /* Indicate interactivity */
+  }
+  
+  /* Optional styling for smaller screens */
+  @media (max-width: 768px) {
+    .navbar a {
+      margin-left: 0.5rem; /* Reduce spacing for compact layout */
+    }
+  }
+  

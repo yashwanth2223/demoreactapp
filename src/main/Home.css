@@ -1,0 +1,48 @@
+/* New CSS for the logo container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color for better visibility */
+    font-size: 24px; /* Font size for better visibility */
+    
+  }
+
+  
+  
+  /* Adjustments to existing CSS for text container */
+  .txt {
+    flex: 1; /* This will make the text container take up the remaining space */
+    padding-right: 20px; /* Add some space between the text and the logo */
+  }
+  
+  /* Original CSS for other elements */
+  .cam_hd_1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    margin-top: 45px !important;
+    width: 560px;
+    line-height: 1.35;
+    font-size: 76px;
+    color: #0d0e0d;
+    align-items: baseline;
+    font-weight: 800 !important;
+  }
+  
+  .cam_para_1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    margin-top: 25px !important;
+    width: 550px;
+    line-height: 1.65;
+    font-size: 25px;
+    color: #0d0e0d;
+    padding-bottom: 20px;
+  }
+  
+  .signup {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(232, 232, 241);
+    font-weight: 1000;
+  }
+  

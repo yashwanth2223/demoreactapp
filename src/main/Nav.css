@@ -1,0 +1,52 @@
+
+body {
+
+  background-image: linear-gradient(to bottom right, #5F4B8BFF, #E69A8DFF); /* Gradient background with Find You?? colors */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep background fixed on scroll */
+  background-size: cover; /* Cover the entire viewport */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Navigation bar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Evenly distribute links horizontally */
+  align-items: center;
+  padding: 20px 40px; /* Add horizontal padding */
+  background-color: #080a0b; /* Dark blue navbar background */  /* Change this color! */
+  color: #9f2424; /* White text for better contrast */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.navbar h2 {
+  margin: 0; /* Remove default margin for heading */
+  font-size: 2rem; /* Larger font size for branding */
+  font-weight: bold;
+  color: #9c2323; /* Match text color with links */
+}
+
+.navbar a {
+  padding: 10px 15px; /* Consistent padding for links */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+/* Additional styling for responsiveness (optional) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: flex-start; /* Align links to the left */
+    padding: 10px;
+  }
+
+  .navbar h2 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+}

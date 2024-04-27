@@ -1,0 +1,63 @@
+/* AdminSign.css */
+
+.admin-signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure form takes up full viewport height */
+  
+  background-repeat: no-repeat; /* Prevent image tiling */
+  background-position: center; /* Center background image */
+  background-size: cover; /* Stretch image to fill container */
+}
+
+.admin-signin h3 {
+  color: #fff; /* White text color for heading */
+  font-weight: bold;
+  margin: 10px 0; /* Add some spacing around heading */
+}
+
+.admin-signin h4 {
+  color: #f00; /* Red text color for messages (error) */
+  font-weight: bold;
+  margin: 10px 0; /* Add some spacing around message */
+}
+
+.admin-signin form {
+  width: 350px; /* Adjust form width as desired */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 20px; /* Add padding for form elements */
+  border-radius: 10px; /* Rounded corners for form */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for form */
+}
+
+.admin-signin form label {
+  display: block; /* Display labels on their own lines */
+  margin-bottom: 5px; /* Add breathing room between labels and inputs */
+  color: #fff; /* White text color for labels */
+  font-weight: bold; /* Emphasize labels */
+}
+
+.admin-signin form input {
+  width: 100%; /* Set input width to full form width */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 16px; /* Consistent font size for inputs */
+  margin-bottom: 15px; /* Add some spacing between inputs */
+}
+
+.admin-signin form button {
+  background-color: #4CAF50; /* Green background color for button */
+  color: #fff; /* White text color for button */
+  padding: 12px 20px; /* Adjust button padding */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners for button */
+  font-weight: bold; /* Emphasize button text */
+  cursor: pointer; /* Indicate clickable button */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.admin-signin form button:hover {
+  background-color: #3e8e41; /* Darken button color on hover */
+}

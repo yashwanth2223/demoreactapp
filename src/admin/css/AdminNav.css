@@ -1,0 +1,61 @@
+/* AdminNav.css */
+
+.admin-navbar {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0; /* Remove default margins */
+  display: flex; /* Enable horizontal layout */
+  justify-content: flex-end; /* Align items to the right side */
+  background-color: #f0f0f0; /* Light background color */
+}
+
+.admin-navbar a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark text color */
+  padding: 15px 20px; /* Consistent padding for links */
+  font-weight: bold; /* Emphasize link text */
+}
+
+.admin-navbar a:hover {
+  background-color: #ddd; /* Subtle hover effect */
+  cursor: pointer; /* Indicate clickable links */
+}
+
+.dropdown {
+  position: relative; /* Enable dropdown positioning */
+  display: inline-block; /* Allow dropdown to appear inline */
+}
+
+.dropdown-content {
+  display: none; /* Hide dropdown content initially */
+  position: absolute; /* Position dropdown content absolutely */
+  background-color: #f1f1f1;
+  min-width: 160px; /* Set minimum width for dropdown */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Subtle shadow for dropdown */
+  z-index: 1; /* Ensure dropdown content appears above other elements */
+}
+
+.dropdown-content a {
+  color: black; /* Black text color for dropdown links */
+  padding: 12px 16px; /* Consistent padding within dropdown */
+  text-decoration: none; /* Remove underline from dropdown links */
+  display: block; /* Display dropdown links as blocks */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown content on hover */
+}
+
+.logoutButton {
+  background-color: #e74c3c; /* Red color for logout button */
+  color: white; /* White text color for logout button */
+  padding: 8px 16px; /* Consistent padding for button */
+  border: none; /* Remove default button border */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Indicate clickable button */
+  font-weight: bold; /* Emphasize logout button text */
+}
+
+.logoutButton:hover {
+  background-color: #c0392b; /* Darken logout button on hover */
+}

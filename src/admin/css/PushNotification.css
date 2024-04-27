@@ -1,0 +1,39 @@
+.push-notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 500px; /* Optional: Set a maximum width */
+  }
+  
+  .push-notification h2 {
+    margin-bottom: 15px;
+  }
+  
+  .push-notification textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit; /* Inherit font family from parent */
+    resize: vertical; /* Allow users to resize the textarea vertically */
+    margin-bottom: 10px;
+  }
+  
+  .push-notification button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #080a0b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .push-notification button:hover {
+    background-color: #000;
+  }
+  

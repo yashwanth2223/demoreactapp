@@ -1,0 +1,44 @@
+.trending-skills {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center text for overall section */
+  }
+  
+  .trending-skills h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .trending-skills p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li.skill-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    cursor: pointer; /* Indicate hover interaction */
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  .skills-list li.skill-item:hover {
+    background-color: #F2EFE5; /* Lighten background on hover */
+  }
+  
+  .skills-list li h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .skills-list li p {
+    line-height: 1.3;
+  }
+  

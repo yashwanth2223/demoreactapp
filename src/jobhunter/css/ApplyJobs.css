@@ -1,0 +1,73 @@
+.flashcard-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow flashcards to wrap onto multiple lines */
+  justify-content: space-between; /* Distribute flashcards evenly */
+  gap: 20px; /* Add spacing between flashcards */
+  width: 80%; /* Set container width for responsiveness */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.flashcard {
+  width: 300px; /* Set flashcard width */
+  background-color: #fff; /* White background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px;
+  text-align: left;
+}
+
+.flashcard h3 {
+  font-size: 1.2rem; /* Adjust flashcard title font size */
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.flashcard p {
+  font-size: 0.9rem; /* Adjust flashcard description font size */
+  line-height: 1.5; /* Adjust line spacing for better readability */
+  margin-bottom: 15px; /* Add spacing below each paragraph */
+}
+
+.company,
+.location,
+.salary,
+.deadline,
+.posted-by,
+.posted-time {
+  display: inline-block; /* Display company, location etc. on the same line */
+  margin-right: 10px; /* Add spacing between elements */
+}
+
+.apply-button {
+  padding: 8px 16px; /* Adjust button padding */
+  background-color: #24303e; /* Dark blue background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners for buttons */
+  cursor: pointer; /* Indicate clickable state */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.apply-button:hover {
+  background-color: #1a242c; /* Darken button on hover */
+}
+
+.message,
+.error {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add some margin for better spacing */
+}
+
+.message {
+  color: green; /* Green color for success messages */
+}
+
+.error {
+  color: red; /* Red color for error messages */
+}
+
+.no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

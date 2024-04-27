@@ -1,0 +1,65 @@
+/* SignUp.css */
+
+.signupform {
+  display: flex; /* Center form horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure form takes up full viewport height */
+ 
+  background-repeat: no-repeat; /* Prevent image tiling */
+  background-position: center; /* Center background image */
+  background-size: cover; /* Stretch image to fill container */
+}
+
+.signupform h3,
+.signupform h2 {
+  color: #fff; /* White text color for headings */
+  font-weight: bold;
+  margin: 10px 0; /* Add some spacing around headings */
+}
+
+.signupform h4 {
+  color: #f00; /* Red text color for messages (error) */
+  font-weight: bold;
+  margin: 10px 0; /* Add some spacing around message */
+}
+
+.signupform form {
+  width: 400px; /* Set form width */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 30px; /* Add padding for form elements */
+  border-radius: 10px; /* Rounded corners for form */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for form */
+}
+
+.signupform form label {
+  display: block; /* Display labels on their own lines */
+  margin-bottom: 5px; /* Add some breathing room between labels and inputs */
+  color: #fff; /* White text color for labels */
+  font-weight: bold; /* Emphasize labels */
+}
+
+.signupform form input,
+.signupform form select {
+  width: 100%; /* Set input width to full form width */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 16px; /* Consistent font size for inputs */
+  margin-bottom: 15px; /* Add some spacing between inputs */
+}
+
+.signupform form button {
+  background-color: #3498db; /* Blue background color for button */
+  color: #fff; /* White text color for button */
+  padding: 10px 20px;
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Rounded corners for button */
+  font-weight: bold; /* Emphasize button text */
+  cursor: pointer; /* Indicate clickable button */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.signupform form button:hover {
+  background-color: #2980b9; /* Darken button color on hover */
+}
