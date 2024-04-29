@@ -79,33 +79,38 @@ export default function AddJob() {
   return (
     <div className='add-job'>
       
-      {
-        message ? <h4 align="center">{message}</h4> : <h4 align="center" style={{color:"red"}}>{error}</h4>
-      }
+      {message ? <h4 style={{ textAlign: "center" }}>{message}</h4> : <h4 style={{ textAlign: "center", color: "red" }}>{error}</h4>}
+
       <form onSubmit={handleSubmit}>
         <div>
-        <h3 align="center"><u>Post a New Job</u></h3>
-          <label>Title</label>
+        <h3 style={{ textAlign: "center", textDecoration: "underline" }}>Post a New Job</h3>
+
+          <h3>Title</h3>
           <input type="text" id="title" value={formData.title} onChange={handleChange} required />
         </div>
         <div>
-          <label>Description</label>
+          <span>Description</span>
           <textarea id="description" value={formData.description} onChange={handleChange} required />
         </div>
 
         
         <div>
-          <label>Roles</label>
+          <span>Roles</span>
           <select id="roles" value={formData.roles} onChange={handleRolesChange} multiple required>
             <option value="Software Engineer">Software Engineer</option>
             <option value="System Engineer">System Engineer</option>
             <option value="Technical Support">Technical Support</option>
             <option value="Testing">Testing</option>
+            <option value="System Architect">System Architect</option>
+            <option value="Full Stack Developer">Full Stack Developer</option>
+            <option value="Graphic Designer">Graphic Designer</option>
+            <option value="Network Engineer">Network Engineer</option>
+
             <option value="Others">Others</option>
           </select>
         </div>
         <div>
-          <label>Job Type</label>
+          <span>Job Type</span>
           <select id="jobtype" value={formData.jobtype} onChange={handleChange} required>
             <option value="">---Select---</option>
             <option value="Full-time">Full-time</option>
@@ -115,29 +120,29 @@ export default function AddJob() {
           </select>
         </div>
         <div>
-          <label>Location</label>
+          <span>Location</span>
           <input type="text" id="location" value={formData.location} onChange={handleChange} required />
         </div>
         <div>
-          <label>Salary</label>
+          <span>Salary</span>
           <input type="number" id="salary" value={formData.salary} onChange={handleChange} required />
         </div>
         <div>
-          <label>Education Qualifications</label>
+          <span>Education Qualifications</span>
           <textarea id="educationqualifications" value={formData.educationqualifications} onChange={handleChange} required />
         </div>
         <div>
-          <label>Requirements(Skills)</label>
+          <span>Requirements(Skills)</span>
 
 
 <textarea id="requirements" value={formData.requirements} onChange={handleChange} required />
         </div>
         <div>
-          <label>Contact Email</label>
+          <span>Contact Email</span>
           <input type="email" id="email" value={formData.email} onChange={handleChange} required />
         </div>
         <div>
-          <label>Deadline</label>
+          <span>Deadline</span>
           <input type="date" id="deadline" value={formData.deadline} onChange={handleChange} required />
         </div>
         <button type="submit">Post</button>

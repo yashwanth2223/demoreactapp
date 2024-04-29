@@ -26,34 +26,34 @@ export default function AdminNav() {
     <div>
 
       <ul className='admin-navbar'>
-        
-        <Link to='/adminhome'>Home</Link>
-        <Link to='/pushnotifications'>Add Notifications</Link>
-        <Link to='/addrec'>Add Recruiter</Link>
-        <Link to='/addevent'>Event</Link>
-
-       
-        
-       
-       
+        <Link to='/admin_home'>Home</Link>
+        <Link to='/pushnotification'>Add Notifications</Link>
+        <Link to='/addrecruiters'>Add Recruiter</Link>
+        <Link to='/add_events'>Event</Link>
         <li><button className="logoutButton" onClick={handleLogout}>Logout</button></li>
-        
-       
         </ul>
-
-      
       <Routes>
-        <Route path='/adminhome' Component={AdminHome}></Route>
-        <Route path='/pushnotifications' Component={PushNotification}></Route>
+        <Route path='/admin_home' Component={AdminHome}></Route>
+        <Route path='/pushnotification' Component={PushNotification}></Route>
         <Route path='/results' Component={Results}></Route>
-        <Route path='/addrec' Component={AddRecruiter}></Route>
-        <Route path='/addevent' Component={AddEvent}></Route>
-        
-        
-       
-        
+        <Route path='/addrecruiters' Component={AddRecruiter}></Route>
+        <Route path='/add_events' Component={AddEvent}></Route>
       </Routes>
-    
+
     </div>
   )
 }
+        
+        
+        
+       
+        
+       
+        
+       
+       
+        
+       
+
+      
+    
