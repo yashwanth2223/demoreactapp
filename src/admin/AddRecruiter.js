@@ -63,18 +63,18 @@ export default function AddRecruiter()
   return (
     <div className='add-recruiter'>
   
-      {
-        message ? <h4 align="center">{message}</h4> : <h4 align="center" style={{color:"red"}}>{error}</h4>
-      }
+  {message ? <h4 style={{ textAlign: "center" }}>{message}</h4> : <h4 style={{ textAlign: "center", color: "red" }}>{error}</h4>}
+
       <form onSubmit={handleSubmit}>
-      <h3 align="center">Add Headhunter</h3>
+      <h3 style={{ textAlign: "center" }}>Add Headhunter</h3>
+
       <h6>Note:Headhunter is a person who is going to hire for Jobs</h6>
         <div>
-          <label>Full Name</label>
+          <spam>Full Name</spam>
           <input type="text" id="fullname" value={formData.fullname} onChange={handleChange} onKeyUp={handleChange} required />
         </div>
         <div>
-          <label>Gender</label>
+          <spam>Gender</spam>
           <select id="gender" value={formData.gender} onChange={handleChange} required>
             <option value="">Select Gender</option>
             <option value="male">Male</option>
@@ -83,27 +83,27 @@ export default function AddRecruiter()
           </select>
         </div>
         <div>
-          <label>Date of Birth</label>
+          <spam>Date of Birth</spam>
           <input type="date" id="dateofbirth" value={formData.dateofbirth} onChange={handleChange} required />
         </div>
         <div>
-          <label>Company Name</label>
+          <spam>Company Name</spam>
           <input type="text" id="company" value={formData.company} onChange={handleChange} required />
         </div>
         <div>
-          <label>Username</label>
+          <spam>Username</spam>
           <input type="text" id="username" value={formData.username} onChange={handleChange} required />
         </div>
         <div>
-          <label>Email</label>
+          <spam>Email</spam>
           <input type="email" id="email" value={formData.email} onChange={handleChange} required />
         </div>
         <div>
-          <label>Address</label>
+          <spam>Address</spam>
           <textarea type="text" id="address" value={formData.address} onChange={handleChange} required />
         </div>
         <div>
-          <label>Contact</label>
+          <spam>Contact</spam>
           <input type="number" id="contact" value={formData.contact} onChange={handleChange} required />
         </div>
         <button type="submit">Add</button>

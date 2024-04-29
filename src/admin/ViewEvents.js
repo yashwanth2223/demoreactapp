@@ -22,7 +22,8 @@ export default function ViewEvents() {
 
   return (
     <div>
-      <h1 align="center">Events</h1>
+     <h1 style={{ textAlign: "center" }}>Events</h1>
+
       <table border={1} align="center">
         <thead>
           <tr>

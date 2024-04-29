@@ -67,32 +67,34 @@ export default function AddEvent() {
 
   return (
     <div>
-      <h3 align="center"><u>Add Event</u></h3>
-      {message ? <h4 align="center">{message}</h4> : null}
-      {error ? <h4 align="center" style={{ color: 'red' }}>{error}</h4> : null}
+      <h3 style={{ textAlign: "center", textDecoration: "underline" }}>Add Event</h3>
+
+      {message ? <h4 style={{ textAlign: "center" }}>{message}</h4> : null}
+      {error ? <h4 style={{ textAlign: "center", color: 'red' }}>{error}</h4> : null}
+
       <form onSubmit={handleSubmit} encType="multipart/form-data">
         <div>
-          <label>Category</label>
+          <spam>Category</spam>
           <input type="text" id="category" value={formData.category} onChange={handleChange} required />
         </div>
         <div>
-          <label>Title</label>
+          <spam>Title</spam>
           <input type="text" id="title" value={formData.title} onChange={handleChange} required />
         </div>
         <div>
-          <label>Description</label>
+          <spam>Description</spam>
           <textarea id="description" value={formData.description} onChange={handleChange} required />
         </div>
         <div>
-          <label>Date</label>
+          <spam>Date</spam>
           <input type="date" id="date" value={formData.date} onChange={handleChange} required />
         </div>
         <div>
-          <label>Location</label>
+          <span>Location</span>
           <input type="text" id="location" value={formData.location} onChange={handleChange} required />
         </div>
         <div>
-          <label>Image</label>
+          <spam>Image</spam>
           <input type="file" id="file" ref={fileInputRef} onChange={handleFileChange} required />
         </div>
         <button type="submit">Add</button>

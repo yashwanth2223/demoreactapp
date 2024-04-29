@@ -6,7 +6,7 @@ export default function ViewRecruiters() {
 
   const fetchRecruiters = async () => {
     try {
-      const response = await axios.get('http://localhost:2033/viewheadhunter');
+      const response = await axios.get(`${config.url}/viewheadhunter`);
       setRecruiters(response.data);
     } catch (error) {
       console.error(error.message);
@@ -17,24 +17,6 @@ export default function ViewRecruiters() {
     fetchRecruiters();
   }, []);
 
-  const deleteRecruiter = async (username) => {
-   
-    if(window.confirm("Are you sure want to delete this recruiter?"))
-    {
-      try {
-        await axios.delete(`${config.url}/deleteheadhunter/${username}`);
-        fetchRecruiters();
-      } catch (error) {
-        console.error(error.message);
-      }
-    }
-    else
-    {
-      fetchRecruiters();
-    }
-
-   
-  }
 
   return (
     <div style={{ textAlign: 'center' }}>

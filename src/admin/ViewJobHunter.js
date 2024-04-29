@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import config from '../config'
 
 
-export default function ViewJobHuntur() {
+export default function ViewJobHunter() {
   const navigate = useNavigate();
   const [jobseekers, setJobSeekers] = useState([]);
 
@@ -46,7 +46,8 @@ export default function ViewJobHuntur() {
 
   return (
     <div>
-      <h1 align="center">Job Seekers</h1>
+      <h1 style={{ textAlign: "center" }}>Job Seekers</h1>
+
       <table border={1} align="center" style={{ width: 'auto', height: 'auto'}}>
         <thead>
           <tr>

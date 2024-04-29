@@ -24,16 +24,13 @@ export default function JobHunterProfile() {
         <p><strong>Email:</strong> {jobseekerData.email}</p>
         <p><strong>Location:</strong> {jobseekerData.location}</p>
         <p><strong>Contact:</strong> {jobseekerData.contact}</p>
-        <Link to="/updatejobseekerprofile">Update Profile</Link>
+        <Link to="/updatejobseeker_profile">Update Profile</Link>
         <Routes>
-      <Route path='/updatejobseekerprofile' Component={UpdateJobHunterProfile}></Route>
+      <Route path='/updatejobseeker_profile' Component={UpdateJobHunterProfile}></Route>
     </Routes>
       </div>
     ) : (
       <p>No Job Seeker Data Found</p>
     )
   );
-  <footer className="about-us__footer">
-  <span>Created By <a href="#">Team Find You??</a> | © 2024 All Rights Reserved</span>
-  </footer>
 }

@@ -46,7 +46,8 @@ export default function ApplyJobs() {
   return (
     <div className="flashcard-container">
       <h3>Posted Jobs</h3>
-      {message ? <h4 align="center">{message}</h4> : <h4 align="center" style={{ color: 'red' }}>{error}</h4>}
+      {message ? <h4 style={{ textAlign: "center" }}>{message}</h4> : <h4 style={{ textAlign: "center", color: 'red' }}>{error}</h4>}
+
       {Array.isArray(jobs) && jobs.length > 0 ? (
         jobs.map((job, index) => (
           <div className="flashcard" key={index}>

@@ -47,22 +47,23 @@ export default function AdminSignin({onAdminLogin})
   return (
     <div className='admin-signin'>
       
-      {
-        message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
-      }
+      {message ? <h4 style={{ textAlign: "center" }}>{message}</h4> : <h4 style={{ textAlign: "center" }}>{error}</h4>}
+
       <form onSubmit={handleSubmit}>
         <div>
-        <h3 align="center">Admin Portal</h3>
-          <label>Username</label>
+        <h3 style={{ textAlign: "center" }}>Admin Portal</h3>
+
+          <span>Username</span>
           <input type="text" name="username" value={formData.username} onChange={handleChange} required />
         </div>
         <div>
-          <label>Password</label>
+          <span>Password</span>
           <input type="password" name="password" value={formData.password} onChange={handleChange} required />
         </div>
         <button type="submit" className="button">Login</button>
         <footer className="about-us__footer">
-        <span>Created By <a href="#">Team Find You??</a> | © 2024 All Rights Reserved</span>
+        <span>Created By <a href="#">Team Find You</a> | © 2024 All Rights Reserved</span>
+
         </footer>
       </form>
     </div>

@@ -19,6 +19,7 @@ export default function JobHeadNav() {
     window.location.reload()
   }
   return (
+    //this the Navbar code for the JobHead page.
     <div>
       <ul className='navbar'>
         <Link to='/jobhead_home'>Home</Link>

@@ -49,17 +49,17 @@ export default function SignIn({onJobHunterLogin})
   return (
     <div className='signin'>
       
-      {
-        message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
-      }
+      {message ? <h4 style={{ textAlign: "center" }}>{message}</h4> : <h4 style={{ textAlign: "center" }}>{error}</h4>}
+
       <form onSubmit={handleSubmit}>
         <div>
-        <h3 align="center"><u>Sign-In</u></h3>
-          <label>Email</label>
+        <h3 style={{ textAlign: "center", textDecoration: "underline" }}>Sign-In</h3>
+
+          <span>Email</span>
           <input type="email" id="email" value={formData.email} onChange={handleChange} required />
         </div>
         <div>
-          <label>Password</label>
+          <span>Password</span>
           <input type="password" id="password" value={formData.password} onChange={handleChange} required />
         </div>
         <button type="submit" className="button">Login</button>

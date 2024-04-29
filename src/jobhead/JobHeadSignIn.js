@@ -51,17 +51,17 @@ export default function JobHeadSignin({onJobHeadLogin})
   return (
     <div className='jobhead-signin'>
   
-      {
-        message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
-      }
+  {message ? <h4 style={{ textAlign: "center" }}>{message}</h4> : <h4 style={{ textAlign: "center" }}>{error}</h4>}
+
       <form onSubmit={handleSubmit}>
         <div>
-        <h3 align="center">JobHead Portal</h3>
-          <label>Username</label>
+        <h3 style={{ textAlign: "center" }}>JobHead Portal</h3>
+
+          <span>Username</span>
           <input type="text" name="username" value={formData.username} onChange={handleChange} required />
         </div>
         <div>
-          <label>Password</label>
+          <span>Password</span>
           <input type="password" name="password" value={formData.password} onChange={handleChange} required />
         </div>
         <button type="submit" className="button">Login</button>

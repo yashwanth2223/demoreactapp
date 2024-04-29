@@ -10,7 +10,7 @@ import './css/AdminNav.css'
 import AddEvent from './AddEvent';
 
 
-
+//this is the for the navbar page of the admin 
 
 export default function AdminNav() {
 

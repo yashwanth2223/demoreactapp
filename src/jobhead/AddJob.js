@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import './css/AddJob.css'
 import config from '../config'
+
+//in here we will be adding jobs for the jobholders by the jobhead and it will be processed by using an form
 export default function AddJob() {
 
     const [recruiterData, setRecruiterData] = useState("");
@@ -77,6 +79,7 @@ export default function AddJob() {
   
 
   return (
+    
     <div className='add-job'>
       
       {message ? <h4 style={{ textAlign: "center" }}>{message}</h4> : <h4 style={{ textAlign: "center", color: "red" }}>{error}</h4>}
